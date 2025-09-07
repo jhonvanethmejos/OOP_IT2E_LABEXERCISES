@@ -1,35 +1,35 @@
 // **************************************************************
 // File Name: Exer1_Declarative.java
-// Author: Jhon Vaneth Mejos
+// Author: Jason S. Salim
 // Date: September 04 2025
-// Deskripsyon: Nagpakita sa Declarative Programming sa Java
-//              gamit ang stream() ug kondisyon.
+// Deskripsyon: Nagpakita sa paggamit sa Declarative Programming
+//              sa Java gamit ang stream() ug kondisyon.
 // **************************************************************
 
-import java.util.Arrays;  // Para makabuhat og fixed list
+import java.util.Arrays;  // Para makahimo og fixed nga lista
 import java.util.List;    // Para sa List nga collection
 
 public class Exer1_Declarative {
     public static void main(String[] args) {
-        // Dataset nga lista sa mga ngalan
-        List<String> names = Arrays.asList("Anna", "Ben", "Carlo", "Diana", "Ella");
+        // Dataset nga naglangkob sa mga ngalan
+        List<String> names = Arrays.asList("Cyril", "Jason", "Antonio", "Rever", "Oliver");
 
-        // Declarative style:
-        // "Unsay gusto nato?" → tan-aw kung naay ngalan ≤ 3 ka characters
+        // Declarative nga pamaagi:
+        // "Unsay atong pangitaon?" → i-check kung adunay ngalan ≤ 3 ka letra
         boolean hasShortName = names.stream().anyMatch(name -> name.length() <= 3);
 
-        // Output
-        System.out.println("Naay ngalan nga mubo (<=3 chars)? " + hasShortName);
+        // Resulta nga ipakita
+        System.out.println("Aduna bay ngalan nga mubo (<=3 chars)? " + hasShortName);
     }
 }
 
 // ----------------------------
 // SAMPLE OUTPUT
 // ----------------------------
-// Naay ngalan nga mubo (<=3 chars)? true
+// Aduna bay ngalan nga mubo (<=3 chars)? false
 //
 // GENERAL COMMENT:
-// Ang declarative nga pamaagi kay focused sa *unsay resulta*
-// dili unsaon pag-loop. Ang stream().anyMatch() automatic nga
-// motan-aw sa tanang elemento.
+// Ang declarative nga approach nagtan-aw sa *unsa ang tuyo*
+// imbes nga mag-focus sa detalye sa looping. 
+// Ang stream().anyMatch() awtomatik nga mo-scan sa tanang elemento.
 // ----------------------------
