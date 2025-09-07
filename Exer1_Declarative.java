@@ -1,6 +1,6 @@
 // **************************************************************
 // File Name: Exer1_Declarative.java
-// Author: Jason S. Salim
+// Author: Jhon Vaneth Mejos
 // Date: September 04 2025
 // Deskripsyon: Nagpakita sa paggamit sa Declarative Programming
 //              sa Java gamit ang stream() ug kondisyon.
@@ -12,7 +12,7 @@ import java.util.List;    // Para sa List nga collection
 public class Exer1_Declarative {
     public static void main(String[] args) {
         // Dataset nga naglangkob sa mga ngalan
-        List<String> names = Arrays.asList("Cyril", "Jason", "Antonio", "Rever", "Oliver");
+        List<String> names = Arrays.asList("Anna", "Ben", "Carlo", "Diana", "Ella");
 
         // Declarative nga pamaagi:
         // "Unsay atong pangitaon?" → i-check kung adunay ngalan ≤ 3 ka letra
@@ -26,7 +26,7 @@ public class Exer1_Declarative {
 // ----------------------------
 // SAMPLE OUTPUT
 // ----------------------------
-// Aduna bay ngalan nga mubo (<=3 chars)? false
+// Aduna bay ngalan nga mubo (<=3 chars)? true
 //
 // GENERAL COMMENT:
 // Ang declarative nga approach nagtan-aw sa *unsa ang tuyo*
